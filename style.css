@@ -59,7 +59,7 @@ a:hover {
 }
 
 .logo {
-  font-size: 2rem;
+  font-size: 3rem;
 }
 
 .logo:hover {
@@ -428,6 +428,7 @@ article .icon {
 
 .contact-info-container p {
   font-size: larger;
+  margin-top: 0rem;
 }
 
 .contact-icon {
@@ -448,3 +449,4 @@ footer {
 footer p {
   text-align: center;
 }
+

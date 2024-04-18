@@ -12,11 +12,18 @@
   .about-containers {
     flex-wrap: wrap;
   }
+
+  #experience {
+    margin-top: 10rem;
+  }
   #contact,
   #projects {
     height: fit-content;
     margin-top: 3rem;
     margin-bottom: 3rem;
+  }
+  #projects {
+    margin-top: 15rem;
   }
 }
 
@@ -28,6 +35,11 @@
 
     .about-containers {
       flex-wrap: wrap;
+      margin-top: 15rem;
+    }
+
+    #experience {
+       margin-top: 20rem;
     }
     
     #contact,

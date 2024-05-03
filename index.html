@@ -13,10 +13,10 @@
       <div class="logo">Joaquín A. Magni</div>
       <div>
         <ul class="nav-links">
-          <li><a href="#about">Sobre Mí</a></li>
-          <li><a href="#experience">Experiencia</a></li>
-          <li><a href="#projects">Proyectos</a></li>
-          <li><a href="#contact">Contacto</a></li>
+          <li><a href="#about" data-section="nav-links" data-value="1">Sobre Mí</a></li>
+          <li><a href="#experience" data-section="nav-links" data-value="2">Experiencia</a></li>
+          <li><a href="#projects" data-section="nav-links" data-value="3">Proyectos</a></li>
+          <li><a href="#contact" data-section="nav-links" data-value="4">Contacto</a></li>
         </ul>
       </div>
     </nav>
@@ -29,21 +29,31 @@
           <span></span>
         </div>
         <div class="menu-links">
-          <li><a href="#about" onclick="toggleMenu()">Sobre Mí</a></li>
-          <li><a href="#experience" onclick="toggleMenu()">Experiencia</a></li>
-          <li><a href="#projects" onclick="toggleMenu()">Proyectos</a></li>
-          <li><a href="#contact" onclick="toggleMenu()">Contacto</a></li>
+          <li><a href="#about" data-section="nav-links" data-value="1" onclick="toggleMenu()">Sobre Mí</a></li>
+          <li><a href="#experience" data-section="nav-links" data-value="2" onclick="toggleMenu()">Experiencia</a></li>
+          <li><a href="#projects" data-section="nav-links" data-value="3" onclick="toggleMenu()">Proyectos</a></li>
+          <li><a href="#contact" data-section="nav-links" data-value="4" onclick="toggleMenu()">Contacto</a></li>
         </div>
       </div>
     </nav>
+    
+    <div id="flags" class="flags">
+      <div class="flags__item" data-language="es">
+        <img src="/assets/es.svg" alt="Icono Español" class="flags__img">
+      </div>
+      <div class="flags__item" data-language="en">
+        <img src="/assets/gb.svg" alt="Icono Inglés" class="flags__img">
+      </div>
+    </div>
+
     <section id="profile">
       <div class="section__pic-container">
         <img src="./assets/profile-pic-1.jpg" alt="Joaquin A. Magni profile picture" />
       </div>
       <div class="section__text">
-        <p class="section__text__p1">Hola, soy</p>
+        <p class="section__text__p1" data-section="profile" data-value="greeting">Hola, soy</p>
         <h1 class="title">Joaquín A. Magni</h1>
-        <p class="section__text__p2">Frontend Developer</p>
+        <p class="section__text__p2" data-section="profile" data-value="rol">Desarrollador Frontend</p>
         <div class="btn-container">          
           <button class="btn btn-color-1" onclick="location.href='./#contact'">
             Contacto
@@ -66,8 +76,8 @@
       </div>
     </section>
     <section id="about">
-      <p class="section__text__p1">Conoce Más</p>
-      <h1 class="title">Sobre Mí</h1>
+      <p class="section__text__p1" data-section="about" data-value="intro">Conoce Más</p>
+      <h1 class="title" data-section="about" data-value="title">Sobre Mí</h1>
       <div class="section-container">
         <div class="section__pic-container">
           <img
@@ -84,8 +94,8 @@
                 alt="Experience icon"
                 class="icon"
               />
-              <h3>Experiencia</h3>
-              <p>+2 años <br />Frontend Development</p>
+              <h3 data-section="about" data-value="experience">Experiencia</h3>
+              <p data-section="about" data-value="experience-time">+3 años <br />Desarrollo Frontend</p>
             </div>
             <div class="details-container">
               <img
@@ -93,12 +103,12 @@
                 alt="Education icon"
                 class="icon"
               />
-              <h3>Education</h3>
-              <p>Desarrollo Web Completo<br />Udemy Academy</p>
+              <h3 data-section="about" data-value="education">Educación</h3>
+              <p data-section="about" data-value="education-title">Desarrollo Web Completo<br />Academia Udemy</p>
             </div>
           </div>
           <div class="text-container">
-            <p>
+            <p data-section="about" data-value="about-description">
               Como desarrollador Frontend, estoy encantado de iniciar mi carrera junto a un equipo talentoso y colaborativo, donde pueda aprovechar mis conocimientos y habilidades mientras expando continuamente mis horizontes. Estoy ansioso de sumergirme en un entorno de trabajo dinámico que fomente el crecimiento y desarrollo. Al trabajar en colaboración con profesionales experimentados, estoy seguro de poder hacer contribuciones valiosas y que sea para un aprendizaje continuo y crecimiento profesional.
               Esta actitud proactiva hacia el aprendizaje puede inspirar a otros miembros del equipo a buscar constantemente formas de mejorar y crecer.
               Además, mi disponibilidad a tiempo completo asegura que estaré allí cuando la empresa me necesite.
@@ -114,15 +124,15 @@
       />
     </section>
     <section id="experience">
-      <p class="section__text__p1">Mis</p>
-      <h1 class="title">Habilidades</h1>
-      <p>El uso de diferentes tecnologías es indispensable a la hora de realizar un buen proyecto. Diferentes tecnologías como Javascript, React, Node, Next JS, garantizan un proyecto excelente.
+      <p class="section__text__p1" data-section="experience" data-value="intro">Mis</p>
+      <h1 class="title" data-section="experience" data-value="title">Habilidades</h1>
+      <p data-section="experience" data-value="description">El uso de diferentes tecnologías es indispensable a la hora de realizar un buen proyecto. Diferentes tecnologías como Javascript, React, Node, Next JS, garantizan un proyecto excelente.
       Es indispensable estar al tanto sobre las actualizaciones de los lenguajes para un mejor código.
       Un código LIMPIO y FUNCIONAL es el resultado de trabajar con las tecnologías de vanguardia.</p>
       <div class="experience-details-container">
         <div class="about-containers">
           <div class="details-container">
-            <h2 class="experience-sub-title">Frontend Development</h2>
+            <h2 class="experience-sub-title" data-section="experience" data-value="subtitle-1">Desarrollo Frontend</h2>
             <div class="article-container">
               <article>
                 <img
@@ -132,7 +142,7 @@
                 />
                 <div>
                   <h3>HTML</h3>
-                  <p>Avanzado</p>
+                  <p data-section="experience" data-value="html">Avanzado</p>
                 </div>
               </article>
               <article>
@@ -143,7 +153,7 @@
                 />
                 <div>
                   <h3>CSS</h3>
-                  <p>Avanzado</p>
+                  <p data-section="experience" data-value="css">Avanzado</p>
                 </div>
               </article>
               <article>
@@ -154,7 +164,7 @@
                 />
                 <div>
                   <h3>SASS</h3>
-                  <p>Intermedio</p>
+                  <p data-section="experience" data-value="sass">Intermedio</p>
                 </div>
               </article>
               <article>
@@ -165,7 +175,7 @@
                 />
                 <div>
                   <h3>JavaScript</h3>
-                  <p>Avanzado</p>
+                  <p data-section="experience" data-value="javascript">Avanzado</p>
                 </div>
               </article>
               <article>
@@ -176,7 +186,7 @@
                 />
                 <div>
                   <h3>TypeScript</h3>
-                  <p>Intermedio</p>
+                  <p data-section="experience" data-value="typescript">Intermedio</p>
                 </div>
               </article>
               <article>
@@ -187,13 +197,13 @@
                 />
                 <div>
                   <h3>React</h3>
-                  <p>Avanzado</p>
+                  <p data-section="experience" data-value="react">Avanzado</p>
                 </div>
               </article>
             </div>
           </div>
           <div class="details-container">
-            <h2 class="experience-sub-title">Backend Development</h2>
+            <h2 class="experience-sub-title" data-section="experience" data-value="subtitle-2">Desarrollo Backend</h2>
             <div class="article-container">
               <article>
                 <img
@@ -203,7 +213,7 @@
                 />
                 <div>
                   <h3>PostgreSQL</h3>
-                  <p>Basic</p>
+                  <p data-section="experience" data-value="postgresql">Básico</p>
                 </div>
               </article>
               <article>
@@ -214,7 +224,7 @@
                 />
                 <div>
                   <h3>Node JS</h3>
-                  <p>Avanzado</p>
+                  <p data-section="experience" data-value="nodejs">Avanzado</p>
                 </div>
               </article>
               <article>
@@ -225,7 +235,7 @@
                 />
                 <div>
                   <h3>Express JS</h3>
-                  <p>Intermedio</p>
+                  <p data-section="experience" data-value="express">Intermedio</p>
                 </div>
               </article>
               <article>
@@ -236,7 +246,7 @@
                 />
                 <div>
                   <h3>Git</h3>
-                  <p>Intermedio</p>
+                  <p data-section="experience" data-value="git">Intermedio</p>
                 </div>
               </article>
             </div>
@@ -251,8 +261,8 @@
       />
     </section>
     <section id="projects">
-      <p class="section__text__p1">Explora Mis</p>
-      <h1 class="title">Proyectos</h1>
+      <p class="section__text__p1" data-section="projects" data-value="title">Explora Mis</p>
+      <h1 class="title" data-section="projects" data-value="sub-title">Proyectos</h1>
       <div class="experience-details-container">
         <div class="about-containers">
           <div class="details-container color-container">
@@ -263,8 +273,8 @@
                 class="project-img"
               />
             </div>
-            <h2 class="experience-sub-title project-title">Fresh Coffee</h2>
-            <h3 class="project-title">App completa para gestión de negocio, con 3 EndPoints.</h3>
+            <h2 class="experience-sub-title project-title">Fresh Coffe Full E-Commerce</h2>
+            <h3 class="project-title" data-section="projects" data-value="project-1">Desarrollé “Fresh Coffee”, una API dinámica en React para una cafetería, que gestiona y muestra productos de forma interactiva. Utilicé React para el frontend y Prisma para la base de datos, creando interfaces de usuario reactivas y un acceso eficiente a los datos de los productos. Diseñé una API con endpoints esenciales, una interfaz intuitiva para el personal de atención al cliente, un panel de cocina en tiempo real y un monitor de pedidos listos. Aseguré que todos los datos relevantes se almacenen de manera segura para facilitar el control del negocio.</h3>
             <div class="btn-container">
               <button
                 class="btn btn-color-2 project-btn"
@@ -289,7 +299,7 @@
               />
             </div>
             <h2 class="experience-sub-title project-title">BrainWave IA</h2>
-            <h3 class="project-title">Landing Page para Brainwave IA.</h3>
+            <h3 class="project-title" data-section="projects" data-value="project-2">Desarrollé la landing page para “BrainWave”, una plataforma de chat de IA, utilizando HTML, CSS y JavaScript puros, demostrando eficiencia y efectividad sin necesidad de librerías adicionales. La página, inspirada en las capacidades de CHAT GPT-4, ofrece una experiencia de usuario interactiva y envolvente. Con un diseño visual atractivo y dinámico, la funcionalidad del chat permite una interacción rápida con la IA. Además, la página es completamente responsive, asegurando una experiencia de usuario coherente en todos los dispositivos.</h3>
             <div class="btn-container">
               <button
                 class="btn btn-color-2 project-btn"
@@ -314,7 +324,7 @@
               />
             </div>
             <h2 class="experience-sub-title project-title">Rent A Car</h2>
-            <h3 class="project-title">Landing Page para consecionaria.</h3>
+            <h3 class="project-title" data-section="projects" data-value="project-3">Desarrollé “Rent A Car”, una plataforma intuitiva para alquilar vehículos, creada con tecnologías de vanguardia como React y Typescript. Ofrece una experiencia de usuario fluida y personalizable, permitiendo a los usuarios filtrar resultados por marca, precio o características. El diseño es responsive y escalable, garantizando una visualización óptima en diferentes dispositivos y facilitando la navegación y la toma de decisiones.</h3>
             <div class="btn-container">
               <button
                 class="btn btn-color-2 project-btn"
@@ -342,7 +352,7 @@
               />
             </div>
             <h2 class="experience-sub-title project-title">The Fit Club</h2>
-            <h3 class="project-title">Landing Page para gimnasio local.</h3>
+            <h3 class="project-title" data-section="projects" data-value="project-4">Desarrollé la landing page para “The Fit Club”, un gimnasio local, utilizando HTML, CSS y JavaScript puros. Esta página, que promueve un estilo de vida saludable y activo, demuestra mi habilidad para desarrollar sitios web responsivos y centrados en el usuario. La estructura de la página garantiza una semántica clara y accesibilidad, mientras que su diseño visual limpio y moderno se adapta a diferentes dispositivos. Añadí interactividad con JavaScript, permitiendo a los clientes consultar precios de manera dinámica. Además, integré una sección de precios y un formulario de contacto para facilitar la interacción y el compromiso con la comunidad.</h3>
             <div class="btn-container">
               <button
                 class="btn btn-color-2 project-btn"
@@ -367,7 +377,8 @@
               />
             </div>
             <h2 class="experience-sub-title project-title">Planificador de Gastos</h2>
-            <h3 class="project-title">App para registrar ingresos y gastos mensuales. Uso personal.</h3>
+            <h3 class="project-title" data-section="projects" data-value="project-5">Desarrollé “Presupuesto Mensual”, una aplicación personal en React para la gestión de finanzas. Esta herramienta interactiva y visualmente atractiva, construida con React, JavaScript, HTML y CSS, permite a los usuarios definir y controlar sus finanzas con facilidad. La aplicación cuenta con una interfaz de usuario dinámica, una lógica de aplicación que maneja ingresos y gastos, un diseño visual atractivo y funcional, un gráfico circular para visualizar la distribución del presupuesto y una funcionalidad para agrupar gastos e ingresos por categorías.
+            </h3>
             <div class="btn-container">
               <button
                 class="btn btn-color-2 project-btn"
@@ -392,7 +403,7 @@
               />
             </div>
             <h2 class="experience-sub-title project-title">PokeDex</h2>
-            <h3 class="project-title">Consumiendo la PokeAPI, mostramos todos los pokemones con sus repectivas evoluciones.</h3>
+            <h3 class="project-title" data-section="projects" data-value="project-6">Diseñé “The Real Pokedex”, un sitio web que utiliza la PokeAPI para mostrar información detallada de todos los Pokémon. Los usuarios pueden buscar Pokémon por nombre y explorar sus características en tarjetas interactivas. El proyecto, desarrollado con tecnologías como React, JavaScript, HTML, CSS y Tailwind CSS, ofrece un diseño limpio y estilizado que resalta la información de los Pokémon, proporcionando una experiencia de usuario interactiva y atractiva.</h3>
             <div class="btn-container">
               <button
                 class="btn btn-color-2 project-btn"
@@ -419,8 +430,8 @@
       />
     </section>
     <section id="contact">
-      <p class="section__text__p1">¿Más Información?</p>
-      <h1 class="title">Contáctame</h1>
+      <p class="section__text__p1" data-section="contact" data-value="title">¿Más Información?</p>
+      <h1 class="title" data-section="contact" data-value="sub-title">Contáctame</h1>
       <div class="contact-info-upper-container">
         <div class="contact-info-container">
           <img
@@ -444,14 +455,14 @@
       <nav>
         <div class="nav-links-container">
           <ul class="nav-links">
-            <li><a href="#about">Sobre Mí</a></li>
-            <li><a href="#experience">Experiencia</a></li>
-            <li><a href="#projects">Proyectos</a></li>
-            <li><a href="#contact">Contacto</a></li>
+            <li><a href="#about" data-section="nav-links" data-value="1">Sobre Mí</a></li>
+            <li><a href="#experience" data-section="nav-links" data-value="2">Experiencia</a></li>
+            <li><a href="#projects" data-section="nav-links" data-value="3">Proyectos</a></li>
+            <li><a href="#contact" data-section="nav-links" data-value="4">Contacto</a></li>
           </ul>
         </div>
       </nav>
-      <p>Copyright &#169; 2024 JM DEV<br/>All Rights Reserved.</p>
+      <p data-section="copyright" data-value="copyright">Copyright © 2024 JMDEV<br/>Todos los derechos reservados.</p>
     </footer>
     <script src="script.js"></script>
   </body>

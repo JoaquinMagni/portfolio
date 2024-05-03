@@ -1,0 +1,55 @@
+{
+    "nav-links": {
+        "1": "About Me",
+        "2": "Experience",
+        "3": "Projects",
+        "4": "Contact"
+    },
+    "profile": {
+        "greeting": "Hi, I am",
+        "rol": "Frontend Developer"
+    },
+    "about": {
+        "intro": "Learn More",
+        "title": "About me",
+        "experience": "Experience",
+        "experience-time": "+3 years <br />Frontend Development",
+        "education": "Education",
+        "education-title": "Complete Web Development <br />Udemy Academy",
+        "about-description": "As a Frontend Developer, I am thrilled to begin my career alongside a talented and collaborative team, where I can leverage my knowledge and skills while continually expanding my horizons. I am eager to immerse myself in a dynamic work environment that encourages growth and development. By working collaboratively with experienced professionals, I am confident that I can make valuable contributions for continued learning and professional growth. This proactive attitude toward learning can inspire other team members to constantly look for ways to improve and grow. Additionally, my full-time availability ensures that I will be there when the company needs me."
+    },
+    "experience": {
+        "intro": "My",
+        "title": "Skills",
+        "description": "The use of different technologies is essential when carrying out a good project. Different technologies such as Javascript, React, Node, Next JS, guarantee an excellent project. It is essential to be aware of language updates for better code. CLEAN and FUNCTIONAL code is the result of working with cutting-edge technologies.",
+        "subtitle-1": "Frontend Development",
+        "html": "Advanced",
+        "css": "Advanced",
+        "sass": "Intermediate",
+        "javascript": "Advanced",
+        "typescript": "Intermediate",
+        "react": "Advanced",
+        "subtitle-2": "Backend Development",
+        "postgresql": "Basic",
+        "nodejs": "Advanced",
+        "express": "Intermediate",
+        "git": "Intermediate"
+    },
+    "projects": {
+        "title": "Explore My",
+        "sub-title": "Projects",
+        "project-1": "I developed “Fresh Coffee”, a dynamic API in React for a coffee shop, which manages and displays products interactively. Used React for the frontend and Prisma for the database, creating reactive user interfaces and efficient access to product data. I designed an API with essential endpoints, an intuitive interface for customer service staff, a real-time kitchen dashboard, and an order ready monitor. Ensured that all relevant data is stored securely to facilitate business control.",
+        "project-2": "I developed the landing page for “BrainWave”, an AI chat platform, using pure HTML, CSS and JavaScript, demonstrating efficiency and effectiveness without the need for additional libraries. The page, inspired by the capabilities of CHAT GPT-4, offers an interactive and immersive user experience. With an attractive and dynamic visual design, the chat functionality allows for quick interaction with AI. In addition, the page is completely responsive, ensuring a consistent user experience on all devices.",
+        "project-3": "I developed “Rent A Car”, an intuitive platform for renting vehicles, created with cutting-edge technologies such as React and Typescript. It offers a seamless and customizable user experience, allowing users to filter results by brand, price or features. The design is responsive and scalable, guaranteeing optimal viewing on different devices and facilitating navigation and decision making.",
+        "project-4": "I developed the landing page for “The Fit Club”, a local gym, using pure HTML, CSS and JavaScript. Promoting a healthy and active lifestyle, this page demonstrates my ability to develop responsive, user-centric websites. The page structure ensures clear semantics and accessibility, while its clean and modern visual design adapts to different devices. I added interactivity with JavaScript, allowing customers to dynamically check prices. Additionally, I integrated a pricing section and a contact form to facilitate interaction and engagement with the community.",
+        "project-5": "I developed “Monthly Budget”, a personal application in React for financial management. This interactive and visually appealing tool, built with React, JavaScript, HTML, and CSS, allows users to define and control their finances with ease. The app features a dynamic user interface, application logic that handles income and expenses, an attractive and functional visual design, a pie chart to visualize budget distribution, and functionality to group expenses and income by categories.",
+        "project-6": "I designed “The Real Pokedex”, a website that uses the PokeAPI to display detailed information on all Pokémon. Users can search for Pokémon by name and explore their characteristics on interactive cards. The project, developed with technologies such as React, JavaScript, HTML, CSS and Tailwind CSS, offers a clean and stylized design that highlights Pokémon information, providing an interactive and attractive user experience."
+    },
+    "contact": {
+        "title": "More information?",
+        "sub-title": "Contact Me"
+    },
+    "copyright": {
+        "copyright": "Copyright © 2024 JMDEV <br/> All rights reserved."
+    }
+}

@@ -66,6 +66,24 @@ a:hover {
   cursor: default;
 }
 
+.flags {
+  width: 100%; /* Ajusta el ancho al 100% del contenedor padre */
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Centra los elementos horizontalmente */
+  margin: 0 auto; /* Centra el contenedor horizontalmente en la página */
+}
+
+.flags__item {
+  width: 30px; /* Mantén el ancho de cada bandera */
+  margin-right: 1rem;
+}
+
+.flags__img {
+  display: block;
+  cursor: pointer;
+}
+
 /* HAMBURGER MENU */
 
 #hamburger-nav {

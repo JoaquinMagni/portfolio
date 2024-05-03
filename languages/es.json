@@ -7,7 +7,8 @@
     },
     "profile": {
         "greeting": "Hola, soy",
-        "rol": "Desarrollador Frontend"
+        "rol": "Desarrollador Frontend",
+        "button": "Contacto"
     },
     "about": {
         "intro": "Conoce Más",
